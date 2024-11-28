@@ -18,4 +18,23 @@ public partial class ToDoItemViewModel : ViewModelBase
     /// </summary>
     [ObservableProperty]
     private string? _content;
+
+    /// <summary>
+    /// Creates a new blank ToDoItemViewModel
+    /// </summary>
+    public ToDoItemViewModel()
+    {
+        // empty
+    }
+
+    /// <summary>
+    /// Creates a new ToDoItemViewModel for the given <see cref="Models.ToDoItem"/>
+    /// </summary>
+    /// <param name="item">The item to load</param>
+    public ToDoItemViewModel(ToDoItem item)
+    {
+        // Init the properties with the given values
+        IsChecked = item.IsChecked;
+        Content = item.Content;
+    }
 }
