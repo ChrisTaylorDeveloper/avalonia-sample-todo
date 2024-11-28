@@ -37,4 +37,17 @@ public partial class ToDoItemViewModel : ViewModelBase
         IsChecked = item.IsChecked;
         Content = item.Content;
     }
+
+    /// <summary>
+    /// Gets a ToDoItem of this ViewModel
+    /// </summary>
+    /// <returns>The ToDoItem</returns>
+    public ToDoItem GetToDoItem()
+    {
+        return new ToDoItem()
+        {
+            IsChecked = this.IsChecked,
+            Content = this.Content
+        };
+    }
 }
