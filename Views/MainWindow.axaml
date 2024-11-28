@@ -14,8 +14,8 @@
     <Grid RowDefinitions="Auto, *, Auto"
           x:Name="Root">
 
-        <!-- This is our title text block.  -->
-        <TextBlock Text="My ToDo-List" />
+        <!-- This is our title text block. We use Style.Classes to style it accordingly  -->
+        <TextBlock Classes="h1" Text="My ToDo-List" />
 
         <ScrollViewer Grid.Row="1">
             <!-- This ItemsControl show all added ToDoItems. -->
