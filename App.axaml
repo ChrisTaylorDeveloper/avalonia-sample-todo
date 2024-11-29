@@ -31,6 +31,11 @@
         <Style Selector="CheckBox:pointerover /template/ Grid#RootGrid">
             <Setter Property="Background" Value="{DynamicResource SystemAccentColorLight3}" />
         </Style>
+
+        <!-- This style will make the icon semi-transparent, it a button is disabled -->
+        <Style Selector="Button:disabled PathIcon">
+            <Setter Property="Opacity" Value="0.4" />
+        </Style>
     </Application.Styles>
 
      <Application.Resources>
