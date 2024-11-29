@@ -5,8 +5,8 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using GetStartedApp.Services;
 using GetStartedApp.ViewModels;
-
 using GetStartedApp.Views;
+
 namespace GetStartedApp;
 
 public partial class App : Application
