@@ -30,10 +30,8 @@
                                       IsChecked="{Binding IsChecked}" />
 
                             <!--  Note how we use the Root-Grid to get the MainWindowViewModel here. As we use compiled bindings we have to cast the DataContext  -->
-                            <Button Command="{Binding #Root.((vm:MainWindowViewModel)DataContext).RemoveItemCommand}"
-                                    CommandParameter="{Binding .}"
-                                    Grid.Column="1">
-                                Delete
+                            <Button Command="{Binding #Root.((vm:MainWindowViewModel)DataContext).RemoveItemCommand}" CommandParameter="{Binding .}" Grid.Column="1">
+                                <PathIcon Data="{DynamicResource DeleteIconData}" Foreground="Red" />
                             </Button>
                         </Grid>
                     </DataTemplate>
